@@ -1,0 +1,50 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: black;
+  color:white;
+  width: 300vw;
+  height: 300vh;
+  display: inline-block;
+  margin: 0;
+
+  overflow: hidden;
+}
+.reference{
+  width: 20vw;
+  height: 20vh;
+  /* background-color: red; */
+  float: left;
+}
+
+/* navigation ids */
+#ref1{}
+  #ref2{}
+    #ref3{}
+      #ref5{}
+
+/* Main Text Section */
+
+#mainText{
+  width: 40vw;
+  height: 90vh;
+
+  position: fixed;
+
+  background-color: navy;
+  color: white;
+
+  z-index: 100;
+
+  margin: 5vh 50vw 5vh 10vw;
+
+  overflow-y: scroll;
+}
+
+/* LINKS */
+a{
+  color: pink;
+  text-decoration: inherit;
+}
