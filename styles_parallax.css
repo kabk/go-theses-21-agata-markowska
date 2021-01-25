@@ -5,6 +5,7 @@ body {
   width: 100%;
   height: 100vh;
   font-family: 'Grafier';
+  overflow: hidden;
 }
 
 #parallax-container {
@@ -25,6 +26,8 @@ body {
     /* Super Modern Browsers */
     url('Agrandir-Regular.woff') format('woff'),
     /* Pretty Modern Browsers */
+    url('Agrandir-Regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
 }
 
 @font-face {
@@ -34,6 +37,7 @@ body {
     /* Super Modern Browsers */
     url('Grafier-BoldDisplay.woff') format('woff'),
     /* Pretty Modern Browsers */
+    url('Grafier-BoldDisplay.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
 .parallax-wrapper {
@@ -110,6 +114,11 @@ a:hover {
   opacity: 0.8;
 }
 
+/* DOT STYLE */
+.dot {
+  display: none;
+}
+
 /* FOR MOBILE */
 @media only screen and (max-width: 1024px) {
   .dot {
@@ -153,5 +162,14 @@ a:hover {
     top:90%;
     left: 50%;
     font-size: 1em;
+  }
+  .dot {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: red;
+    transition: transform .25s;
+    z-index: 200;
+    opacity: 0.8;
   }
 }
