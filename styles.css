@@ -155,7 +155,8 @@ button{
     cursor: pointer;
     box-sizing: none;
     margin: 0em;
-    font-family: 'Agrandir';
+    /* font-family: 'Agrandir'; */
+    font-family: inherit;
     font-size: inherit!important;
     padding: none!important;
     border: none!important;
@@ -168,8 +169,6 @@ button:hover:active:after:before{
   border: none;
 }
 
-#no_footnote{
-}
 .no_footnote{display: none;}
 .footnote{
   display: inline-block;
@@ -182,7 +181,6 @@ button:hover:active:after:before{
 padding-left: 1em;
 padding-right: 1em;
 }
-
 
 
 /* FOR MOBILE */
@@ -250,3 +248,4 @@ padding-right: 1em;
 ::-webkit-scrollbar-thumb:hover {
   background: red;
 }
+#f1{}

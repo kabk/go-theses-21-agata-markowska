@@ -1,6 +1,6 @@
 
 var parallaxBox = $('#parallax-container');
-var strength = 0.2,
+var strength = 0.4,
 isMobile = false;
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
