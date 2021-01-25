@@ -22,12 +22,14 @@ body {
 @font-face {
   font-family: 'Agrandir';
   src:
+    url('Agrandir-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('Agrandir-Regular.woff2') format('woff2'),
     /* Super Modern Browsers */
     url('Agrandir-Regular.woff') format('woff'),
     /* Pretty Modern Browsers */
     url('Agrandir-Regular.ttf') format('truetype'),
     /* Safari, Android, iOS */
+    url('Agrandir-Regular.eot'); /* IE9 Compat Modes */
 }
 
 @font-face {
@@ -37,7 +39,10 @@ body {
     /* Super Modern Browsers */
     url('Grafier-BoldDisplay.woff') format('woff'),
     /* Pretty Modern Browsers */
-    url('Grafier-BoldDisplay.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('Grafier-BoldDisplay.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('Agrandir-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('Grafier-BoldDisplay.eot'); /* IE9 Compat Modes */
 }
 
 .parallax-wrapper {

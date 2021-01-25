@@ -82,13 +82,14 @@ body {
 }
 
 /* TYPE STYLES */
+/* BODY */
 p {
   font-size: 1em;
   margin: 1em;
   margin-right: 30%;
   margin-left: 3em;
 }
-
+/* TITLE */
 h1 {
   font-family: 'Grafier';
   font-size: 2em;
@@ -96,7 +97,7 @@ h1 {
   margin-left: 3em;
   margin-bottom: 2em;
 }
-
+/* CITATION */
 h2 {
   font-family: 'Grafier';
   font-size: 1.5em;
@@ -104,16 +105,27 @@ h2 {
   margin-left: 3em;
   margin-bottom: 2em;
 }
+/* IMAGE CAPTION */
+h3{
+  font-family: 'Agrandir';
+  font-size: 1em;
+  margin: 1em;
+  margin-right: 30%;
+  margin-left: 3em;
+  color: red;
+}
 
 @font-face {
   font-family: 'Agrandir';
   src:
+    url('Agrandir-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('Agrandir-Regular.woff2') format('woff2'),
     /* Super Modern Browsers */
     url('Agrandir-Regular.woff') format('woff'),
     /* Pretty Modern Browsers */
     url('Agrandir-Regular.ttf') format('truetype'),
     /* Safari, Android, iOS */
+    url('Agrandir-Regular.eot'); /* IE9 Compat Modes */
 }
 
 @font-face {
@@ -125,6 +137,8 @@ h2 {
     /* Pretty Modern Browsers */
     url('Grafier-BoldDisplay.ttf') format('truetype'),
     /* Safari, Android, iOS */
+    url('Agrandir-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('Grafier-BoldDisplay.eot'); /* IE9 Compat Modes */
 }
 
 button{
@@ -135,14 +149,15 @@ button{
     display: inline-block;
     text-align: left;
     align-items: flex-start;
-    cursor: default;
+    cursor: pointer;
     box-sizing: none;
     margin: 0em;
     font-family: 'Agrandir';
-    font-size: inherit;
-    padding: none;
-    border: none;
-    background-color: transparent;
+    font-size: inherit!important;
+    padding: none!important;
+    border: none!important;
+    background-color: transparent!important;
+    outline: none!important;
 }
 button:hover:active:after:before{
   text-decoration: underline;
@@ -162,6 +177,8 @@ button:hover:active:after:before{
   font-family: 'Agrandir';
   font-size: 1em;
 }
+
+
 
 /* FOR MOBILE */
 @media only screen and (max-width: 1024px) {
