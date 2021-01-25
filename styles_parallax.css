@@ -9,6 +9,7 @@ body {
   height: 100vh;
   font-family: 'Grafier';
   overflow: hidden;
+    align-items: center;
 }
 
 #parallax-container {
@@ -124,9 +125,12 @@ a:hover {
 
 }
 
-/* DOT STYLE */
 .dot {
-  display: none;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: red;
+  transition: transform .25s;
 }
 
 /* FOR MOBILE */
@@ -173,13 +177,5 @@ a:hover {
     left: 50%;
     font-size: 1em;
   }
-  .dot {
-    width: 2em;
-    height: 2em;
-    border-radius: 50%;
-    background-color: red;
-    transition: transform .25s;
-    z-index: 200;
-    opacity: 0.8;
-  }
+
 }
