@@ -1,6 +1,5 @@
 * {
   /* cursor: none !important; */
-    cursor: url(mouse_2.png), auto!important;
 }
 
 body {
@@ -69,7 +68,7 @@ body {
 }
 
 /* DOT DESKTOP STYLE */
-/* .desktop_dot {
+.desktop_dot {
   position: absolute;
   top: 48vh;
   left: 48vw;
@@ -79,8 +78,9 @@ body {
   border-radius: 50%;
   background-color: red;
   z-index: 101;
-  opacity: 0.8;
-} */
+  opacity: 0.9;
+  pointer-events: none!important;
+}
 
 /* TYPE STYLES */
 /* BODY */
