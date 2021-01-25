@@ -1,4 +1,7 @@
 /* PARALLAX */
+*{
+  coursor: none!important;
+}
 body {
   background: black;
   overflow: hidden;

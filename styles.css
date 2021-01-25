@@ -1,5 +1,6 @@
 * {
-  cursor: none !important;
+  /* cursor: none !important; */
+    cursor: url(mouse_2.png), auto!important;
 }
 
 body {
@@ -68,7 +69,7 @@ body {
 }
 
 /* DOT DESKTOP STYLE */
-.desktop_dot {
+/* .desktop_dot {
   position: absolute;
   top: 48vh;
   left: 48vw;
@@ -79,7 +80,7 @@ body {
   background-color: red;
   z-index: 101;
   opacity: 0.8;
-}
+} */
 
 /* TYPE STYLES */
 /* BODY */
@@ -103,6 +104,7 @@ h2 {
   font-size: 1.5em;
   color: #f20000;
   margin-left: 3em;
+  margin-right: 3em;
   margin-bottom: 2em;
 }
 /* IMAGE CAPTION */
@@ -113,6 +115,11 @@ h3{
   margin-right: 30%;
   margin-left: 3em;
   color: red;
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
 }
 
 @font-face {
@@ -176,6 +183,8 @@ button:hover:active:after:before{
   color: white;
   font-family: 'Agrandir';
   font-size: 1em;
+padding-left: 1em;
+padding-right: 1em;
 }
 
 
